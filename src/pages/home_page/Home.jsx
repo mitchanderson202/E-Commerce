@@ -1,19 +1,12 @@
-import "./Home.scss";
+import React from "react";
+import Carousel from "../../components/carousel/Carousel.jsx";
 
-import Carousel from "../../components/carousel/Carousel";
+const Home = (props) => {
+  const { data } = props;
 
-const Home = () => {
   return (
-    <div className="Home">
-      <header>
-        <h1>... Shop</h1>
-      </header>
-      <main>
-        <Carousel />
-      </main>
-      <footer>
-        <p>Links</p>
-      </footer>
+    <div>
+      <Carousel data={data} />
     </div>
   );
 };

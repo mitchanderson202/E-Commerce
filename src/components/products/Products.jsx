@@ -1,11 +1,16 @@
 import "./Products.scss";
 
-const Products = () => {
+const Products = ({ data }) => {
   return (
     <div>
-      <p>Prod 1</p>
-      <p>Prod 2</p>
-      <p>Prod 3</p>
+      {data.map((item) => (
+        <div key={item.id}>
+          <p>{item.data.Name}</p>
+          <h3>Name: {item.data.Name}</h3>
+          <p>Price: {item.data.Price}</p>
+          <p>Favourited: {item.data.Favourited}</p>
+        </div>
+      ))}
     </div>
   );
 };
