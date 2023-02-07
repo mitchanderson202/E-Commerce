@@ -1,15 +1,18 @@
 import "./Products.scss";
 
+import Card from "../card/Card";
+
 const Products = ({ data }) => {
   return (
     <div>
-      {data.map((item) => (
-        <div key={item.id}>
-          <p>{item.data.Name}</p>
-          <h3>Name: {item.data.Name}</h3>
-          <p>Price: {item.data.Price}</p>
-          <p>Favourited: {item.data.Favourited}</p>
-        </div>
+      {data.map((product) => (
+        <Card
+          key={product.id}
+          name={product.data.Name}
+          price={product.data.Price}
+          image={product.data.Image}
+          favoured={product.data.Favoured}
+        />
       ))}
     </div>
   );

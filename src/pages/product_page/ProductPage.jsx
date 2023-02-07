@@ -1,11 +1,11 @@
 import "./ProductPage.scss";
 
-const ProductPage = () => {
+import Products from "../../components/products/Products.jsx";
+
+const ProductPage = ({ data }) => {
   return (
     <div>
-      <p>Some Product</p>
-      <p>Some Variant</p>
-      <p>Some Product</p>
+      <Products data={data} />
     </div>
   );
 };

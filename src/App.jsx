@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import getData from "../firebase";
 import Home from "./pages/home_page/Home.jsx";
-import Products from "./components/products/Products";
-import NavBar from "./components/NavBar/NavBar.jsx";
+import NavBar from "./components/navbar/NavBar.jsx";
+import ProductPage from "./pages/product_page/ProductPage";
 
 function App() {
   const [data, setData] = useState([]);
@@ -21,7 +21,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home data={data} />} />
-          <Route path="/products/:id" element={<Products />} />
+          <Route path="/products/" element={<ProductPage data={data} />} />
         </Routes>
       </BrowserRouter>
     </>
