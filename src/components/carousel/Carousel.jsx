@@ -1,16 +1,19 @@
 import "./Carousel.scss";
 
-const Carousel = (props) => {
-  const { data } = props;
+import Card from "../card/Card";
+
+const Carousel = ({ data }) => {
   const favouritedData = data.filter((item) => item.data.Favoured === true);
 
   return (
-    <div>
+    <div className="Carousel__Grid">
       {favouritedData.map((item) => (
-        <div key={item.id} className="Product__Box">
-          <h3>Name: {item.data.Name}</h3>
-          <p>Price: {item.data.Price}</p>
-        </div>
+        <Card
+          key={item.id}
+          name={item.data.Name}
+          price={item.data.Price}
+          image={item.data.Image}
+        />
       ))}
     </div>
   );

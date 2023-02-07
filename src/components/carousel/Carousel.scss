@@ -1,4 +1,6 @@
-.Product__Box {
-  border: 1px solid black;
-  text-align: center;
+.Carousel__Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  background-color: burlywood;
 }
