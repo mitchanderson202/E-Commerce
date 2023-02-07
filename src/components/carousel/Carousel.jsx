@@ -7,32 +7,43 @@ import { useState } from "react";
 const Carousel = ({ data }) => {
   const favouritedData = data.filter((item) => item.data.Favoured === true);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
 
   const handlePrevClick = () => {
-    setCurrentIndex(currentIndex - 1);
-    if (currentIndex - 1 < 0) {
+    if (currentIndex === 0) {
       setCurrentIndex(favouritedData.length - 3);
+    } else {
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
   const handleNextClick = () => {
     setCurrentIndex(currentIndex + 1);
-    if (currentIndex + 3 > favouritedData.length) {
+    if (currentIndex + 3 >= favouritedData.length) {
       setCurrentIndex(0);
     }
   };
 
+  window.addEventListener("resize", () => {
+    setWidth(window.innerWidth);
+  });
+
   return (
     <div className="Carousel__Grid">
-      {favouritedData.slice(currentIndex, currentIndex + 3).map((item) => (
-        <Card
-          key={item.id}
-          name={item.data.Name}
-          price={item.data.Price}
-          image={item.data.Image}
-          favoured={item.data.Favoured}
-        />
-      ))}
+      {favouritedData
+        .slice(
+          currentIndex,
+          currentIndex + (width >= 1200 ? 3 : width >= 800 ? 2 : 1)
+        )
+        .map((item) => (
+          <Card
+            key={item.id}
+            name={item.data.Name}
+            price={item.data.Price}
+            image={item.data.Image}
+            favoured={item.data.Favoured}
+          />
+        ))}
       <div className="Buttons">
         <button className="Button Button__left" onClick={handlePrevClick}>
           L
