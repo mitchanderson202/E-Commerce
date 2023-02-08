@@ -5,7 +5,7 @@ import getData from "../firebase";
 import Home from "./pages/home_page/Home.jsx";
 import NavBar from "./components/navbar/NavBar.jsx";
 import ProductPage from "./pages/product_page/ProductPage";
-import Footer from "./pages/footer/Footer";
+import Item from "./pages/item_page/Item";
 
 function App() {
   const [data, setData] = useState([]);
@@ -23,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home data={data} />} />
           <Route path="/products/" element={<ProductPage data={data} />} />
+          <Route path="/products/:name/" element={<Item data={data} />} />
         </Routes>
       </BrowserRouter>
     </>
