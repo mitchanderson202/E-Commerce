@@ -46,10 +46,10 @@ const Carousel = ({ data }) => {
         ))}
       <div className="Buttons">
         <button className="Button Button__left" onClick={handlePrevClick}>
-          L
+          &#8249;
         </button>
         <button className="Button Button__right" onClick={handleNextClick}>
-          R
+          &#8250;
         </button>
       </div>
     </div>

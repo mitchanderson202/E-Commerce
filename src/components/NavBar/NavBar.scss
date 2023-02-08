@@ -1,11 +1,28 @@
 .Navbar {
   display: flex;
   justify-content: space-around;
-  background-color: brown;
+  background-color: #de87d9;
   height: 5vh;
 
   a {
     text-decoration: none;
     font-size: 1.4em;
+    color: #002879;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Navbar {
+    a {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Navbar {
+    a {
+      font-size: 1em;
+    }
   }
 }

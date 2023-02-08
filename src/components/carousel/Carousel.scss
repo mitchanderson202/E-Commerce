@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   position: relative;
-  background-color: burlywood;
+  background-color: #deb887;
   height: 60vh;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
@@ -43,7 +43,7 @@
   right: 0;
 }
 
-.Buttons:hover {
+.Button:hover {
   background-color: black;
 }
 

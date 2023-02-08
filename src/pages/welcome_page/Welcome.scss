@@ -1,6 +1,18 @@
 .Welcome {
   text-align: center;
   font-size: 1.4em;
-  background-color: darkcyan;
+  background-color: #87de8c;
   height: 15vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .Welcome {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Welcome {
+    font-size: 1em;
+  }
 }

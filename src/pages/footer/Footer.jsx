@@ -13,6 +13,7 @@ const Footer = () => {
       </div>
       <div>
         <h1>Sign up to our Newsletter</h1>
+
         <p>
           Email:
           <input type="email" />

@@ -1,7 +1,7 @@
 .Products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: burlywood;
+  background-color: #deb887;
 }
 
 @media screen and (max-width: 1200px) {
