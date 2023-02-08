@@ -3,5 +3,11 @@
   justify-content: space-around;
   background-color: black;
   color: white;
-  height: 20vh;
+  min-height: 20vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .Footer {
+    display: block;
+  }
 }

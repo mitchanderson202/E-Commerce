@@ -4,7 +4,7 @@ import Card from "../card/Card";
 
 const Products = ({ data }) => {
   return (
-    <div>
+    <div className="Products">
       {data.map((product) => (
         <Card
           key={product.id}

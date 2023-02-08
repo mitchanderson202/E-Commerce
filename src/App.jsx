@@ -5,6 +5,7 @@ import getData from "../firebase";
 import Home from "./pages/home_page/Home.jsx";
 import NavBar from "./components/navbar/NavBar.jsx";
 import ProductPage from "./pages/product_page/ProductPage";
+import Footer from "./pages/footer/Footer";
 
 function App() {
   const [data, setData] = useState([]);
