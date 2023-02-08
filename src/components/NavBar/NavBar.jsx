@@ -8,7 +8,7 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </h1>
       <h1>
-        <NavLink to="/products">Products</NavLink>
+        <NavLink to="/products">All Products</NavLink>
       </h1>
     </div>
   );
