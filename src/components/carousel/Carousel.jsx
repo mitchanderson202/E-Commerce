@@ -18,9 +18,10 @@ const Carousel = ({ data }) => {
   };
 
   const handleNextClick = () => {
-    setCurrentIndex(currentIndex + 1);
-    if (currentIndex + 3 >= favouritedData.length) {
-      setCurrentIndex(0);
+    if (currentIndex === 0) {
+      setCurrentIndex(favouritedData.length - 3);
+    } else {
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
