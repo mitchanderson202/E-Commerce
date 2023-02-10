@@ -1,6 +1,6 @@
 import "./Carousel.scss";
 
-import Card from "../card/Card";
+import Card from "../Card/Card";
 
 import { useState } from "react";
 
@@ -37,13 +37,7 @@ const Carousel = ({ data }) => {
           currentIndex + (width >= 1200 ? 3 : width >= 800 ? 2 : 1)
         )
         .map((item) => (
-          <Card
-            key={item.id}
-            name={item.data.Name}
-            price={item.data.Price}
-            image={item.data.Image}
-            favoured={item.data.Favoured}
-          />
+          <Card key={item.id} data={item.data} />
         ))}
       <div className="Buttons">
         <button className="Button Button__left" onClick={handlePrevClick}>

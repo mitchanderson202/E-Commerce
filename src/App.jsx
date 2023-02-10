@@ -2,10 +2,11 @@ import "./App.scss";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import getData from "../firebase";
-import Home from "./pages/home_page/Home.jsx";
-import NavBar from "./components/navbar/NavBar.jsx";
-import ProductPage from "./pages/product_page/ProductPage";
-import Item from "./pages/item_page/Item";
+import Home from "./pages/Home/Home.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import ProductGrid from "./pages/ProductGrid/ProductGrid";
+import Product from "./pages/Product/Product";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -22,9 +23,10 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home data={data} />} />
-          <Route path="/products/" element={<ProductPage data={data} />} />
-          <Route path="/products/:name/" element={<Item data={data} />} />
+          <Route path="/products/" element={<ProductGrid data={data} />} />
+          <Route path="/products/:name/" element={<Product data={data} />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

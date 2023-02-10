@@ -1,7 +1,6 @@
 import React from "react";
-import Carousel from "../../components/carousel/Carousel.jsx";
-import Welcome from "../welcome_page/Welcome.jsx";
-import Footer from "../footer/Footer.jsx";
+import Carousel from "../../components/Carousel/Carousel.jsx";
+import Welcome from "../Welcome/Welcome.jsx";
 
 const Home = (props) => {
   const { data } = props;
@@ -10,7 +9,6 @@ const Home = (props) => {
     <div>
       <Welcome />
       <Carousel data={data} />
-      <Footer />
     </div>
   );
 };
