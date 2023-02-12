@@ -1,49 +1,29 @@
-# React e-cShop Website
+# React e-Commerce-Shop Website
 
 ## Outline
 
-This project is designed to reinforce your React learnings and make sure that you are comfortable with most aspect of the framework.
-With this project you will practice how to:
+Create a React E-Commerce website that reads data from Firebase Firestore. Minimal design, can be fixed in future. There's a Carousel on the Home page that shows the Favourite Products, then an All Products page which shows all products. There's also a single product page with size changes and a cart. This still needs a final touch up, but meets the requirements for now. The page is also fully responsive.
 
-- Fetch Data within a React App
-- Use react-router-dom
-- Use Firebase/Firestore
+## Link
+
+Repository:
+https://github.com/mitchanderson202/E-Commerce
+
+## Stack
+
+- React
+- SCSS
+- Firebase-Firestore
 
 ## MVP
 
-At a minimum your e-shop website should have two pages:
+- Grid of products.
+- Carousel of features products.
+- Product page that allows you to add to cart and select a variation of the product (color, size, etc).
+- Data from Firebase that shows: name, price, image url, favourited or not. All data is stored in Firestore and fetched, nothing to be stored in the react app.
 
-- Home Page
-  - This will contain:
-    - A Grid of products
-    - Carousel of featured products
-    - Product Page (with id parameter) Similar to a product page on another site, allows you to add to cart and select product variants
-- All products should be stored in Firestore:
-  - You should store the following information:
-    - quantity
-    - variants (could be colors, sizes, etc)
-    - price per unit
-    - name
-    - image url
-    - favourited or not (boolean)
-      All data should be stored in Firestore and fetched by the frontend, there should be NO static product data in the react application
+## Updates to make
 
-### Bonus
-
-Using Firestore and react create, a cart system. Create a cart page in your react app Add logic to prevent users from adding items to cart that are no longer in stock. You will have to check the current cart and the product quantity Cart page should have the following:
-
-- List of products in cart
-
-  - Ability to change quantity of products in cart
-  - Ability to remove items from cart
-
-- TIPS :
-
-1. Make sure your site is scoped to one category of products
-
-## Useful links
-
-- [React-router-dom](https://reactrouter.com/docs/en/v6/getting-started/overview)
-- [Dummy JSON](https://dummyjson.com/)
-- [Fake Store](https://fakestoreapi.com/)
-# E-Commerce
+- I would like to make this page a better design. Design isn't my strong point but I can still do better.
+- Make the Cart and sizes interactive and update a stock count.
+- Add another product.
