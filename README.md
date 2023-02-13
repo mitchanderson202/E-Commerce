@@ -6,6 +6,9 @@ Create a React E-Commerce website that reads data from Firebase Firestore. Minim
 
 ## Link
 
+Check it out here:
+https://e-commerce-store-932e8.web.app/
+
 Repository:
 https://github.com/mitchanderson202/E-Commerce
 
