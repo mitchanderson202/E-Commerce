@@ -10,6 +10,9 @@ const Navbar = () => {
       <h1>
         <NavLink to="/products">All Products</NavLink>
       </h1>
+      <h1 className="Cart__Page">
+        <NavLink to="/cart">Cart</NavLink>
+      </h1>
     </div>
   );
 };

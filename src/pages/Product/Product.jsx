@@ -2,7 +2,7 @@ import "./Product.scss";
 import { useParams } from "react-router-dom";
 import Card from "../../components/Card/Card";
 
-const Product = ({ data }) => {
+const Product = ({ data, addToCart }) => {
   const { name } = useParams();
 
   const item = data.find((item) => item.data.Name === name);
@@ -14,8 +14,9 @@ const Product = ({ data }) => {
         <div className="Buy__Information">
           <h1>{item.data.Name}</h1>
           <h3>Price: ${item.data.Price}</h3>
-          <p>Size</p>
-          <button className="Cart">Add to Cart</button>
+          <button className="Cart__btn" onClick={() => addToCart(item.data)}>
+            Add to Cart
+          </button>
         </div>
       </div>
     </>

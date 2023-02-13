@@ -7,10 +7,10 @@
 }
 
 .Buy__Information {
-  padding-left: 20%;
+  padding-left: 10%;
 }
 
-.Cart {
+.Cart__btn {
   background-color: black;
   color: white;
   border: 0;
@@ -24,5 +24,9 @@
   }
   .Buy__Information {
     padding-left: 0;
+  }
+  .Cart {
+    padding-left: 0;
+    align-self: center;
   }
 }
