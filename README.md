@@ -2,7 +2,7 @@
 
 ## Outline
 
-Create a React E-Commerce website that reads data from Firebase Firestore. Minimal design, can be fixed in future. There's a Carousel on the Home page that shows the Favourite Products, then an All Products page which shows all products. There's also a single product page with size changes and a cart. This still needs a final touch up, but meets the requirements for now. The page is also fully responsive.
+Create a React E-Commerce website that reads data from Firebase Firestore. Minimal design, can be fixed in future. There's a Carousel on the Home page that shows the Favourite Products, then an All Products page which shows all products. There's also a single product page to add product to cart. The cart will load up any shirt that has been "added to cart" but there's nothing on the cart page yet to clear, delete or checkout. This still needs a final touch up, but meets the requirements for now. The page is also fully responsive.
 
 ## Link
 
