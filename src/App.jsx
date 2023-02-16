@@ -9,30 +9,6 @@ import Product from "./pages/Product/Product";
 import Footer from "./pages/Footer/Footer";
 import Cart from "./pages/Cart/Cart";
 
-// function App() {
-//   const [data, setData] = useState([]);
-
-//   useEffect(() => {
-//     getData().then((items) => {
-//       setData(items);
-//     });
-//   }, []);
-
-//   return (
-//     <>
-//       <BrowserRouter>
-//         <NavBar />
-//         <Routes>
-//           <Route path="/" element={<Home data={data} />} />
-//           <Route path="/products/" element={<ProductGrid data={data} />} />
-//           <Route path="/products/:name/" element={<Product data={data} />} />
-//           <Route path="/cart" element={<Cart data={data} />} />
-//         </Routes>
-//         <Footer />
-//       </BrowserRouter>
-//     </>
-//   );
-// }
 function App() {
   const [cart, setCart] = useState([]);
 
