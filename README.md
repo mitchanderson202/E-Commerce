@@ -4,7 +4,7 @@
 
 ## Demo & Snippets
 
-![Home-Page-Photo-Example](images\e-commerce home page.png)
+![Home-Page-Photo-Example](ec-shop\src\images\e-commerce home page.png)
 ![Single-Item-Photo-Example](images\e-commerce store single item.png)
 
 ---
