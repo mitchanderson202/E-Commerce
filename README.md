@@ -4,8 +4,10 @@
 
 ## Demo & Snippets
 
-![Home-Page-Photo-Example](images\e-commerce-home-page.png)
-![Single-Item-Photo-Example](./images\e-commerce-store-single-item.png)
+<img width="973" alt="e-commerce-home-page" src="https://user-images.githubusercontent.com/78459081/224606026-054c0366-6628-4250-ad7e-8e59e73fa0a0.png">
+<img width="887" alt="e-commerce-store-single-item" src="https://user-images.githubusercontent.com/78459081/224606046-3d0570fd-4d04-49d7-b063-5a280609d47e.png">
+
+
 
 ---
 
