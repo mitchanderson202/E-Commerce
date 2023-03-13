@@ -1,13 +1,9 @@
 # E-Commerce Store
 
-{add test badges here, all projects you build from here on out will have tests, therefore you should have github workflow badges at the top of your repositories: [Github Workflow Badges](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)}
-
 ## Demo & Snippets
 
 <img width="973" alt="e-commerce-home-page" src="https://user-images.githubusercontent.com/78459081/224606026-054c0366-6628-4250-ad7e-8e59e73fa0a0.png">
 <img width="887" alt="e-commerce-store-single-item" src="https://user-images.githubusercontent.com/78459081/224606046-3d0570fd-4d04-49d7-b063-5a280609d47e.png">
-
-
 
 ---
 
