@@ -4,8 +4,8 @@
 
 ## Demo & Snippets
 
-![Home Page Photo Example]("images\e-commerce home page.png")
-![Single Item Photo Example]("images\e-commerce store single item.png")
+![Home Page Photo Example](images\e-commerce home page.png)
+![Single Item Photo Example](images\e-commerce store single item.png)
 
 ---
 
