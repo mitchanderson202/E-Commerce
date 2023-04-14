@@ -59,3 +59,4 @@ This is a Vite app using React.
 ## Change logs
 
 - 13/03/22. Updated Readme.
+- 14/04/2023. Updated the Add to cart button to display text with a 2 second timeout.

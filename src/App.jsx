@@ -11,8 +11,8 @@ import Cart from "./pages/Cart/Cart";
 
 function App() {
   const [cart, setCart] = useState([]);
-
   const [data, setData] = useState([]);
+  const [added, setAdded] = useState("");
 
   useEffect(() => {
     getData().then((items) => {
@@ -22,6 +22,10 @@ function App() {
 
   const addToCart = (item) => {
     setCart([...cart, item]);
+    setAdded("Added to Cart!");
+    setTimeout(() => {
+      setAdded("");
+    }, 2000);
   };
 
   return (
@@ -33,7 +37,9 @@ function App() {
           <Route path="/products/" element={<ProductGrid data={data} />} />
           <Route
             path="/products/:name/"
-            element={<Product data={data} addToCart={addToCart} />}
+            element={
+              <Product data={data} addToCart={addToCart} added={added} />
+            }
           />
           <Route path="/cart" element={<Cart data={cart} />} />
         </Routes>
